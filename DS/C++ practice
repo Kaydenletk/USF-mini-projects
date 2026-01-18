@@ -1,1 +1,199 @@
 
+# C++ Fundamentals Drill - Pre-Data Structures Practice
+
+## Section 1: Basic Programming Elements (20 points)
+
+### Problem 1.1: Simple Program Structure (4 points)
+Write a complete C++ program that:
+- Includes necessary headers
+- Has a main function
+- Prints "Hello, Data Structures!" to the console
+- Returns 0
+
+### Problem 1.2: Fundamental Types (4 points)
+Declare and initialize variables of the following types with appropriate values:
+```cpp
+// Complete the following:
+a) An integer to store age
+b) A double to store GPA
+c) A char to store a grade letter
+d) A boolean to check if enrolled
+e) A string to store student name
+```
+
+### Problem 1.3: Pointers Basics (6 points)
+Given:
+```cpp
+int x = 10;
+int* ptr = &x;
+```
+What will be the output of:
+a) `cout << x;`
+b) `cout << &x;`
+c) `cout << ptr;`
+d) `cout << *ptr;`
+e) After executing `*ptr = 20;`, what is the value of x?
+
+### Problem 1.4: Arrays (6 points)
+Write code to:
+a) Declare an array of 5 integers
+b) Initialize it with values {2, 4, 6, 8, 10}
+c) Print the third element
+d) Change the last element to 100
+e) Calculate and print the sum of all elements
+
+---
+
+## Section 2: Expressions and Casting (15 points)
+
+### Problem 2.1: Basic Expressions (5 points)
+Evaluate the following (show your work):
+```cpp
+a) int result = 17 / 5;        // result = ?
+b) double result = 17.0 / 5;   // result = ?
+c) int x = 5; x = x++ + ++x;   // x = ?
+d) int a = 10, b = 20; int c = (a > b) ? a : b;  // c = ?
+```
+
+### Problem 2.2: Type Casting (10 points)
+Complete the following conversions:
+```cpp
+a) Convert int 65 to char (what character?)
+b) Convert double 9.99 to int (what value?)
+c) Convert char '5' to int (what value?)
+d) static_cast vs C-style cast - explain the difference
+e) When would you use reinterpret_cast?
+```
+
+---
+
+## Section 3: Control Flow (20 points)
+
+### Problem 3.1: If-Else Statements (6 points)
+Write a program that takes a numeric grade (0-100) and prints the letter grade:
+- A: 90-100
+- B: 80-89
+- C: 70-79
+- D: 60-69
+- F: 0-59
+
+### Problem 3.2: Loops (8 points)
+Write three different versions to print numbers 1 to 10:
+a) Using a for loop
+b) Using a while loop
+c) Using a do-while loop
+
+### Problem 3.3: Switch Statements (6 points)
+Write a menu system using switch that:
+- Takes a number 1-4
+- Prints different messages for each choice
+- Handles invalid input with default case
+
+---
+
+## Section 4: Functions (25 points)
+
+### Problem 4.1: Basic Function (5 points)
+Write a function `int square(int n)` that returns the square of n.
+
+### Problem 4.2: Pass by Value vs Reference (8 points)
+Write two functions:
+a) `void swapByValue(int a, int b)` - attempts to swap
+b) `void swapByReference(int& a, int& b)` - successfully swaps
+
+Explain why one works and the other doesn't.
+
+### Problem 4.3: Function Overloading (7 points)
+Write three overloaded `max` functions:
+```cpp
+a) int max(int a, int b)
+b) double max(double a, double b)
+c) int max(int a, int b, int c)
+```
+
+### Problem 4.4: Default Parameters (5 points)
+Write a function `void printMessage(string msg, int times = 1)` that prints a message n times.
+
+---
+
+## Section 5: Classes and Objects (20 points)
+
+### Problem 5.1: Basic Class (8 points)
+Create a `Rectangle` class with:
+- Private members: width, height
+- Constructor that takes width and height
+- Public methods: getArea(), getPerimeter()
+- Getter and setter methods
+
+### Problem 5.2: Constructor/Destructor (6 points)
+Add to the Rectangle class:
+- Default constructor (sets width and height to 1)
+- Copy constructor
+- Destructor that prints "Rectangle destroyed"
+
+### Problem 5.3: The Big Three (6 points)
+Explain when you need:
+a) Destructor
+b) Copy constructor
+c) Assignment operator
+
+Give an example of a class that would need all three.
+
+---
+
+## Bonus Section: Mixed Problems (10 points)
+
+### Bonus 1: Pointer Arithmetic (5 points)
+```cpp
+int arr[] = {10, 20, 30, 40, 50};
+int* ptr = arr;
+```
+What is the value of:
+a) `*(ptr + 2)`
+b) `ptr[3]`
+c) After `ptr++;`, what does `*ptr` equal?
+
+### Bonus 2: Dynamic Memory (5 points)
+Write code to:
+a) Dynamically allocate an array of 10 integers
+b) Fill it with values 0-9
+c) Properly deallocate the memory
+
+---
+
+## Challenge Problems (Extra Credit - 10 points)
+
+### Challenge 1: Recursion Preview (5 points)
+Write a recursive function `int factorial(int n)` that computes n!
+
+### Challenge 2: Vector Basics (5 points)
+Write code using `vector<int>` to:
+- Create a vector
+- Add 5 elements using push_back
+- Print all elements
+- Remove the last element
+- Print the size
+
+---
+
+## Coding Exercise: Complete Program (20 points)
+
+Write a complete Student Management System with:
+
+**Requirements:**
+1. A Student class with:
+   - Name, ID, GPA (private)
+   - Constructor
+   - Display method
+   
+2. Main function that:
+   - Creates array of 3 students
+   - Allows user to input data
+   - Displays all students
+   - Finds and displays student with highest GPA
+
+**Rubric:**
+- Class design: 8 points
+- Input/Output: 5 points
+- Logic correctness: 5 points
+- Code style: 2 points
